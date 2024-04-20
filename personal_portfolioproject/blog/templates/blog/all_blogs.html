@@ -1,0 +1,14 @@
+Hello blog
+
+<h2> Romina has written {{ blogs.count }} blog{{ blogs.count|pluralize }} </h2>
+
+{% for blog in blogs %}
+
+<a href="{% url 'blog:detail' blog.id %}"> <h2> {{ blog.title}} </h2> </a>
+<h5> {{ blog.date|date:"D M d Y" |upper }} </h5>
+<p> {{ blog.description|striptags|truncatechars:150}} </p>
+{% if blog.image %}
+<img src="{{ blog.image.url }}" alt="{{ blog.title }}">
+{% endif %}
+
+{% endfor %}
