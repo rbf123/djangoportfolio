@@ -1,0 +1,43 @@
+.navbar-nav .nav-link {
+    color: rgba(0,0,0,1) !important;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.5) !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFF3F5
+}
+
+#blogtitle {
+    font-size: rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 500; /* Bold */
+    
+      
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+        
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+        font-family: 'Pixelify Sans', sans-serif;
+        font-weight: 700; /* Bold */
+    }
+}
+
+#span {
+    font-size: 5rem;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.tableauPlaceholder {
+    width: 100%;
+    height: 100%;
+  }
