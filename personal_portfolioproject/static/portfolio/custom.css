@@ -23,7 +23,13 @@ body {
     font-size: rem;
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: 500; /* Bold */
-    
+    color: #da0ef5;
+      
+}
+
+#blogdate {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #da0ef5;
       
 }
 
@@ -33,13 +39,18 @@ body {
         
     }
     #blogdetailtitle {
-        font-size: 5rem;
+        font-size: 3rem;
         font-family: 'Pixelify Sans', sans-serif;
-        font-weight: 700; /* Bold */
+        font-weight: 200; /* Bold */
+        color: #da0ef5;
     }
-    h1.pixelify-sans-myname,
+    h1.pixelify-sans-myname {
+        font-family: 'Pixelify Sans', sans-serif;
+    }
+
     h2.pixelify-sans-myname {
-    font-family: 'Pixelify Sans', sans-serif;
+        font-family: 'Pixelify Sans', sans-serif;
+        color: #da0ef5;
   }
 }
 
@@ -70,7 +81,39 @@ body {
   
   @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: rgb(255, 164, 53); }
+    50% { border-color: rgb(41, 255, 3); }
   }
   
+  #blogbtn {
+    background-color: #da0ef5;
+     /* #D16587; Purple Pink color */
+    border-color: #D16587; /* Same color for border */
+    color: white; /* Text color */
+  }
   
+  #blogbtn:hover {
+    background-color: #FF69B4; /* Hot Pink color on hover */
+    border-color: #FF69B4; /* Same color for border on hover */
+  }
+
+  .image-container {
+    width: 100%;
+    
+    max-width: 1200px; /* Adjust this value to set the maximum width of the images */
+    padding-bottom: 56.25%; /* This sets the aspect ratio to 16:9 (adjust as needed) */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #blogdesc {
+    padding: 5rem;
+  }

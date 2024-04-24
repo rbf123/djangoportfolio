@@ -2,11 +2,15 @@
 {% load static %}
 {% block content %}
 
+
+
 <h1 class="text-center mt-5" id="blogdetailtitle"> {{ blog.title }} </h1>
-<h5 class="text-center text-muted mb-5">❁{{ blog.date|date:"D M d Y" |upper }}❁ </h5>
+<h5 class="text-center text-muted mb-5" id="blogdate">❁{{ blog.date|date:"D M d Y" |upper }}❁ </h5>
+<div class="text-left" id="blogdesc">
 {{ blog.description|safe }}
+</div>
 {% if blog.image %}
-<img src="{{ blog.image.url }}" alt="{{ blog.title }}">
+<img src="{{ blog.image.url }}" alt="{{ blog.title }}" class="mx-auto d-block">
 {% endif %}
 
 {% endblock %}
