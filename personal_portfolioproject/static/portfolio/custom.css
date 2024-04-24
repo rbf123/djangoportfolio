@@ -7,6 +7,13 @@
     color: rgba(0,0,0,.5) !important;
 }
 
+.myname {
+    font-family: 'Pixelify Sans', sans-serif !important;
+    font-weight: 700; /* Bold */ ;
+    color: #715F93 !important;
+
+  }
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #FFF3F5
@@ -30,6 +37,10 @@ body {
         font-family: 'Pixelify Sans', sans-serif;
         font-weight: 700; /* Bold */
     }
+    h1.pixelify-sans-myname,
+    h2.pixelify-sans-myname {
+    font-family: 'Pixelify Sans', sans-serif;
+  }
 }
 
 #span {
@@ -41,3 +52,25 @@ body {
     width: 100%;
     height: 100%;
   }
+
+  /* Existing CSS styles */
+
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange;
+    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+    
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(255, 164, 53); }
+  }
+  
+  
