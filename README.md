@@ -6,6 +6,7 @@ Features <br>
     Homepage: Displays an overview of featured projects and links to other sections.<br>
     Projects: Highlights completed projects with descriptions, technologies used, and links to live demos.<br>
     Blog: A regularly updated blog section to share thoughts and insights.<br>
+    Other Links: The menu links can be clicked to show a downloadable resume, LinkedIn profile & GitHub page.
     Responsive Design: The website is fully responsive and optimized for various devices.
   <br><br>
 Technologies Used <br>
